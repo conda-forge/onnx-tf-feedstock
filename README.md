@@ -14,14 +14,16 @@ Summary: Experimental Tensorflow Backend for ONNX
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/onnx-tf-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/onnx-tf-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/onnx-tf-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/onnx-tf-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/onnx-tf-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/onnx-tf-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/onnx-tf-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/onnx-tf-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/onnx-tf-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/onnx-tf-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/onnx-tf-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/onnx-tf-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/onnx-tf/badges/version.svg)](https://anaconda.org/conda-forge/onnx-tf)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/onnx-tf/badges/downloads.svg)](https://anaconda.org/conda-forge/onnx-tf)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-onnx--tf-green.svg)](https://anaconda.org/conda-forge/onnx-tf) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/onnx-tf.svg)](https://anaconda.org/conda-forge/onnx-tf) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/onnx-tf.svg)](https://anaconda.org/conda-forge/onnx-tf) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/onnx-tf.svg)](https://anaconda.org/conda-forge/onnx-tf) |
 
 Installing onnx-tf
 ==================
