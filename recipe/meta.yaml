@@ -1,6 +1,6 @@
 {% set name = "onnx-tf" %}
-{% set version = "1.0" %}
-{% set sha256 = "34054adeb61de97bc596b8008f5a78abbd9c3b5da69ecaf9c4b075d01ed20dca" %}
+{% set version = "1.1" %}
+{% set sha256 = "37a97cdcff5d432495a6a463f2e81172897ee6c3509b100f581b99700d3aa4c9" %}
 
 package:
   name: {{ name|lower }}
@@ -14,13 +14,13 @@ source:
 build:
   # Could be noarch: python except for the tests....
   number: 0
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: python -m pip install --ignore-installed --no-deps .
   skip: true  # [win32 or (win64 and py27)]
 
 requirements:
-  build:
+  host:
     - python
-    - setuptools
+    - pip
   run:
     - python
     - numpy
@@ -29,11 +29,8 @@ requirements:
 
 test:
   imports:
-    # onnx_tf.__init__ is empty, doesn't actually do anything.
-    - onnx_tf
-    # These require importing tensorflow, which currently the Linux CI can't do.
-    - onnx_tf.backend      # [not linux]
-    - onnx_tf.backend_rep  # [not linux]
+    # Requires importing tensorflow, which currently the Linux CI can't do.
+    - onnx_tf  # [not linux]
 
 about:
   home: http://github.com/onnx/onnx-tensorflow
