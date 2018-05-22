@@ -1,6 +1,6 @@
 {% set name = "onnx-tf" %}
-{% set version = "1.1" %}
-{% set sha256 = "37a97cdcff5d432495a6a463f2e81172897ee6c3509b100f581b99700d3aa4c9" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "a6cb0bb70a7d34e0dab8882efd94d2e033ac2e2cab7c5fd2007bc38097c13554" %}
 
 package:
   name: {{ name|lower }}
@@ -24,7 +24,7 @@ requirements:
   run:
     - python
     - numpy
-    - onnx
+    - onnx >=1.1.0  # in ONNX_VERSION_NUMBER
     - tensorflow
 
 test:
