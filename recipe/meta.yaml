@@ -1,6 +1,6 @@
 {% set name = "onnx-tf" %}
-{% set version = "1.1.2" %}
-{% set sha256 = "a6cb0bb70a7d34e0dab8882efd94d2e033ac2e2cab7c5fd2007bc38097c13554" %}
+{% set version = "1.6.0" %}
+{% set sha256 = "040f56d5de801346d1b054e4c120caf236c56008320de1c7ba48d65c13f911e4" %}
 
 package:
   name: {{ name|lower }}
@@ -37,7 +37,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Experimental Tensorflow Backend for ONNX'
+  summary: Experimental Tensorflow Backend for ONNX
   doc_url: https://github.com/onnx/onnx-tensorflow
   dev_url: https://github.com/onnx/onnx-tensorflow
 
